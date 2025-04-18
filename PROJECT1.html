@@ -1,78 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+  <title>Page Title</title>
+  <style>
+    .button-bar {
+      text-align: center;
+      margin: 20px;
+    }
+
+   
+
+    pre {
+      font-size: 18px;
+      border: 2px solid black;
+      background-color: lightcyan;
+      margin: 10px auto;
+      padding: 10px;
+      display: none;
+      width: fit-content;
+    }
+
+ 
+   
+    .categories-title {
+      font-size: 50px;
+      color: brown;
+      margin-left: 250px;
+      font-style: italic;
+    }
+
+    .category-image {
+      width: 300px;
+      height: 200px;
+      margin: 10px;
+      border-radius: 20px;
+    }
+   
+  </style>
+   <script>
+    function toggleVisibility(id) {
+      const element = document.getElementById(id);
+      element.style.display = (element.style.display === 'none' || element.style.display === '') ? 'block' : 'none';
+    }
+  </script>
 </head>
 <body>
 
- <img src="log.jpeg">
-<div style ="Text-align:center; margin:5px 5px 5px 5px; font-size:20px" >
-<button style="margin:10px" ><a >Home</a></button>
-<button style="margin:10px" ><a >About Us</a></button>
-<button style="margin:10px" ><a >Contact</a></button>
+  <img src="image/logo.jpg" alt="Logo" style="display:block; margin:auto;">
 
+  
+  <div class="button-bar">
+    <button onclick="toggleVisibility('content')">Home</button>
+    <button onclick="toggleVisibility('demo')">About Us</button>
+    <button onclick="toggleVisibility('demo2')">Contact Us</button>
+  </div>
 
- </div> 
+  
+  <div style=" text-align: center;
+  margin: 10px auto;
+  max-width: 800px;">
+    <pre id="content">It's PS LA2
+Mentor: Mr.Kanhayya Khandagale</pre>
 
-<P style="font-size:40px;text-align:center">Read Smarter ,Not Harder</P>
-<P style="font-size:25px;text-align:center">"Discover your next great read! Our online library offers a vast collection of books across all genres—anytime, anywhere.<br> Dive into stories, expand your knowledge, and enjoy reading like never before."
-</P>
+    <pre id="demo">Team members:
+1. Dushyant Patil
+2. Suyog Jalit
+3. Sai Patil
+4. Harshal Bansod
+5. Pratik Mhaisane</pre>
 
-<hr>
-<p style="font-size:50px;font-style:arabic;color:brown; margin-left:250px">Categories</p>
+    <pre id="demo2">1. dushyant.patil@walchandsangli.ac.in
+2. sai.patil@walchandsangli.ac.in
+3. pratik.mhaisane@walchandsangli.ac.in
+4. suyog.jalit@walchandsangli.ac.in
+5. pratik.mhaisane@walchandsangli.ac.in</pre>
+  </div>
 
-<a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-  <img src="elephant.jpg"
-       alt="elephant";
-       width="300";
-       height="200";
- style="margin:10px 25px 10px 250px  ; border-radius: 20px;">
-</a>
+  
+  
 
-<a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-  <img src="elephant.jpg"
-       alt="elephant";
-       width="300";
-       height="200";
-style="margin:10px 20px 10px 10px  ; border-radius: 20px;">
-</a>
-<a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-  <img src="elephant.jpg"
-       alt="elephant";
-       width="300";
-       height="200";
-style="margin:10px  ; border-radius: 20px;";>
-</a>
-<a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-  <img src="elephant.jpg"
-       alt="elephant";
-       width="300";
-       height="200";
-style="margin:10px 25px 10px 250px  ; border-radius: 20px;">
-</a>
-<a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-  <img src="elephant.jpg"
-       alt="elephant";
-       width="300";
-       height="200";
-style="margin:10px 20px 10px 10px  ; border-radius: 20px;";>
-</a>
-<a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-  <img src="elephant.jpg"
-       alt="elephant";
-       width="300";
-       height="200";
-style="margin:10px ; border-radius: 20px;";>
-</a>
+  <p style=" font-size: 40px;
+      text-align: center;">Read Smarter, Not Harder</p>
+  <p style=" font-size: 25px;
+      text-align: center;">
+    "Discover your next great read! Our online library offers a vast collection of books across all genres—anytime, anywhere.<br>
+    Dive into stories, expand your knowledge, and enjoy reading like never before."
+  </p>
 
+  <hr>
 
+  
+  <p class="categories-title">Categories</p>
 
-
-
-<p id="demo"></p>
-
-
+  <a href="https://www.google.com" target="_blank">
+    <img src="image/science fiction.jpg" class="category-image" alt="Science Fiction">
+  </a>
+  <a href="https://www.google.com" target="_blank">
+    <img src="image/historical.jpg" class="category-image" alt="Historical">
+  </a>
+  <a href="https://www.google.com" target="_blank">
+    <img src="image/mystery.jpg" class="category-image" alt="Mystery">
+  </a>
+  <a href="https://www.google.com" target="_blank">
+    <img src="image/drama.jpg" class="category-image" alt="Drama">
+  </a>
+  <a href="https://www.google.com" target="_blank">
+    <img src="image/horror.jpg" class="category-image" alt="Horror">
+  </a>
+  <a href="https://www.google.com" target="_blank">
+    <img src="image/adventure.jpg" class="category-image" alt="Adventure">
+  </a>
 
 </body>
 </html>
-
