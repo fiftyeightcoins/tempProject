@@ -47,6 +47,32 @@
       element.style.display = (element.style.display === 'none' || element.style.display === '') ? 'block' : 'none';
     }
   </script>
+  <style>
+  .cool-button {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .cool-button:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cool-button:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  }
+</style>
+  
 </head>
 <body>
   <div style="text-align: center; margin: 20px;">
@@ -121,42 +147,42 @@ Mentor: Mr.Kanhayya Khandagale</pre>
       <a href="https://www.google.com" target="_blank">
         <img src="image/historical.jpg" class="category-image" style="border-radius: 20px;" alt="Historical">
       </a><br>
-      <button style="margin-top: 10px;">Read More</button>
+      <button class="cool-button" style="margin-top: 10px;">Read More</button>
     </div>
   
     <div style="display: inline-block; margin: 20px; text-align: center;">
       <a href="https://www.google.com" target="_blank">
         <img src="image/science fiction.jpg" class="category-image" style="border-radius: 20px;" alt="Science Fiction">
       </a><br>
-      <button style="margin-top: 10px;">Read More</button>
+      <button class="cool-button" style="margin-top: 10px;">Read More</button>
     </div>
   
     <div style="display: inline-block; margin: 20px; text-align: center;">
       <a href="https://www.google.com" target="_blank">
         <img src="image/mystery.jpg" class="category-image" style="border-radius: 20px;" alt="Mystery">
       </a><br>
-      <button style="margin-top: 10px;">Read More</button>
+      <button class="cool-button" style="margin-top: 10px;">Read More</button>
     </div>
   
     <div style="display: inline-block; margin: 20px; text-align: center;">
       <a href="https://www.google.com" target="_blank">
         <img src="image/drama.jpg" class="category-image" style="border-radius: 20px;" alt="Drama">
       </a><br>
-      <button style="margin-top: 10px;">Read More</button>
+      <button class="cool-button" style="margin-top: 10px;">Read More</button>
     </div>
   
     <div style="display: inline-block; margin: 20px; text-align: center;">
       <a href="https://www.google.com" target="_blank">
         <img src="image/horror.jpg" class="category-image" style="border-radius: 20px;" alt="Horror">
       </a><br>
-      <button style="margin-top: 10px;">Read More</button>
+      <button class="cool-button" style="margin-top: 10px;">Read More</button>
     </div>
   
     <div style="display: inline-block; margin: 20px; text-align: center;">
       <a href="https://www.google.com" target="_blank">
         <img src="image/adventure.jpg" class="category-image" style="border-radius: 20px;" alt="Adventure">
       </a><br>
-      <button style="margin-top: 10px;">Read More</button>
+      <button class="cool-button" style="margin-top: 10px;">Read More</button>
     </div>
   </div>
   <br><br><br><br><br><br><br><br>
@@ -180,4 +206,5 @@ Mentor: Mr.Kanhayya Khandagale</pre>
 
 </body>
 </html>
+
 
