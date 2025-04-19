@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <style>
+    .button-bar {
+      text-align: center;
+      margin: 20px;
+    }
+
+   
+
+    pre {
+      font-size: 18px;
+      border: 2px solid black;
+      background-color: lightcyan;
+      margin: 10px auto;
+      padding: 10px;
+      display: none;
+      width: fit-content;
+    }
+
+ 
+   
+    .categories-title {
+      font-size: 50px;
+      color: brown;
+      margin-left: 100px;
+      font-style: italic;
+    }
+
+    .category-image {
+      width: 300px;
+      height: 200px;
+      padding: bottom 30px;;
+    
+    }
+    .category-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+  </style>
+   <script>
+    function toggleVisibility(id) {
+      const element = document.getElementById(id);
+      element.style.display = (element.style.display === 'none' || element.style.display === '') ? 'block' : 'none';
+    }
+  </script>
+  <style>
+  .cool-button {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .cool-button:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cool-button:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  }
+</style>
+  
+</head>
+<body>
+  <div style="text-align: center; margin: 20px;">
+    <input type="text" placeholder="Search books..." style="padding: 10px; width: 300px; font-size: 16px;">
+    <button style="padding: 10px 20px; font-size: 16px;">Search</button>
+  </div>
+  <img src="image/logo.jpg" alt="Logo" style="display:block; margin:auto;">
+
+  
+  <div class="button-bar">
+    <button onclick="toggleVisibility('content')">Home</button>
+    <button onclick="toggleVisibility('demo')">About Us</button>
+    <button onclick="toggleVisibility('demo2')">Contact Us</button>
+  </div>
+
+  
+  <div style=" text-align: center;
+  margin: 10px auto;
+  max-width: 800px;">
+    <pre id="content">It's PS LA2
+Mentor: Mr.Kanhayya Khandagale</pre>
+
+    <pre id="demo">Team members:
+1. Dushyant Patil
+2. Suyog Jalit
+3. Sai Patil
+4. Harshal Bansod
+5. Pratik Mhaisane</pre>
+
+    <pre id="demo2">1. dushyant.patil@walchandsangli.ac.in
+2. sai.patil@walchandsangli.ac.in
+3. pratik.mhaisane@walchandsangli.ac.in
+4. suyog.jalit@walchandsangli.ac.in
+5. pratik.mhaisane@walchandsangli.ac.in</pre>
+  </div>
+  <div style="display: flex;">
+    <div style="flex: 1;">
+  
+  
+      <p style="font-size: 20px; font-family: Georgia, serif; line-height: 1.6; margin-left: 20px;">
+        📚 Discover Your Next Great Read!<br>
+        Welcome to your ultimate online library—a vast collection<br> 
+        of books in every genre, available anytime, anywhere.<br>
+        ✨ Whether you're diving into captivating stories or <br>
+        your knowledge, there's something at BOOKVERSE for every reader.<br>
+        ✨ Read more. Learn more. Love reading like never before.<br>
+      </p>
+    </div>
+    <div>
+      <img src="image/reading.jpg" alt="Reading" style="width: 400px; margin-top: -20px;">
+    </div>
+  </div>
+  
+  
+  
+
+  <p style=" font-size: 40px;
+      text-align: center;">Read Smarter, Not Harder</p>
+  <p style=" font-size: 25px;
+      text-align: center;">
+    "Discover your next great read! Our online library offers a vast collection of books across all genres—anytime, anywhere.<br>
+    Dive into stories, expand your knowledge, and enjoy reading like never before."
+  </p>
+
+  <hr>
+
+  
+  <p class="categories-title">Categories</p>
+
+  <div style="text-align: center;">
+    <div style="display: inline-block; margin: 20px; text-align: center;">
+      <a href="https://www.google.com" target="_blank">
+        <img src="image/historical.jpg" class="category-image" style="border-radius: 20px;" alt="Historical">
+      </a><br>
+      <button onclick="window.location.href='about.html';" class="cool-button" style="margin-top: 10px;">
+        Read More
+      </button>
+    </div>
+  
+    <div style="display: inline-block; margin: 20px; text-align: center;">
+      <a href="https://www.google.com" target="_blank">
+        <img src="image/science fiction.jpg" class="category-image" style="border-radius: 20px;" alt="Science Fiction">
+      </a><br>
+      <button class="cool-button" style="margin-top: 10px;">Read More</button>
+    </div>
+  
+    <div style="display: inline-block; margin: 20px; text-align: center;">
+      <a href="https://www.google.com" target="_blank">
+        <img src="image/mystery.jpg" class="category-image" style="border-radius: 20px;" alt="Mystery">
+      </a><br>
+      <button class="cool-button" style="margin-top: 10px;">Read More</button>
+    </div>
+  
+    <div style="display: inline-block; margin: 20px; text-align: center;">
+      <a href="https://www.google.com" target="_blank">
+        <img src="image/drama.jpg" class="category-image" style="border-radius: 20px;" alt="Drama">
+      </a><br>
+      <button class="cool-button" style="margin-top: 10px;">Read More</button>
+    </div>
+  
+    <div style="display: inline-block; margin: 20px; text-align: center;">
+      <a href="https://www.google.com" target="_blank">
+        <img src="image/horror.jpg" class="category-image" style="border-radius: 20px;" alt="Horror">
+      </a><br>
+      <button class="cool-button" style="margin-top: 10px;">Read More</button>
+    </div>
+  
+    <div style="display: inline-block; margin: 20px; text-align: center;">
+      <a href="https://www.google.com" target="_blank">
+        <img src="image/adventure.jpg" class="category-image" style="border-radius: 20px;" alt="Adventure">
+      </a><br>
+      <button class="cool-button" style="margin-top: 10px;">Read More</button>
+    </div>
+  </div>
+  <br><br><br><br><br><br><br><br>
+
+
+
+  <div style="display: flex; justify-content: space-between; align-items: center; margin: 40px;">
+    <div style="flex: 1; font-size: 30px; color: #333; padding-left: 50px;">
+      <p>
+        "Our aim is to make<br>
+        knowledge accessible to everyone."
+      </p>
+    </div>
+  
+    <div>
+      <img src="image/reading.jpg" alt="Reading" style="width: 300px; border-radius: 20px;">
+    </div>
+  </div>
+  
+  
+
+</body>
+</html>
