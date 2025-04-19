@@ -32,9 +32,14 @@
     .category-image {
       width: 300px;
       height: 200px;
+      padding: bottom 30px;;
     
     }
-   
+    .category-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
   </style>
    <script>
     function toggleVisibility(id) {
@@ -43,8 +48,11 @@
     }
   </script>
 </head>
-<body style="background-color:lavenderblush;">
-
+<body>
+  <div style="text-align: center; margin: 20px;">
+    <input type="text" placeholder="Search books..." style="padding: 10px; width: 300px; font-size: 16px;">
+    <button style="padding: 10px 20px; font-size: 16px;">Search</button>
+  </div>
   <img src="image/logo.jpg" alt="Logo" style="display:block; margin:auto;">
 
   
@@ -70,11 +78,28 @@ Mentor: Mr.Kanhayya Khandagale</pre>
 
     <pre id="demo2">1. dushyant.patil@walchandsangli.ac.in
 2. sai.patil@walchandsangli.ac.in
-3. harshal.bansod@walchandsangli.ac.in 
+3. pratik.mhaisane@walchandsangli.ac.in
 4. suyog.jalit@walchandsangli.ac.in
 5. pratik.mhaisane@walchandsangli.ac.in</pre>
   </div>
-
+  <div style="display: flex;">
+    <div style="flex: 1;">
+  
+  
+      <p style="font-size: 20px; font-family: Georgia, serif; line-height: 1.6; margin-left: 20px;">
+        📚 Discover Your Next Great Read!<br>
+        Welcome to your ultimate online library—a vast collection<br> 
+        of books in every genre, available anytime, anywhere.<br>
+        ✨ Whether you're diving into captivating stories or <br>
+        your knowledge, there's something at BOOKVERSE for every reader.<br>
+        ✨ Read more. Learn more. Love reading like never before.<br>
+      </p>
+    </div>
+    <div>
+      <img src="image/reading.jpg" alt="Reading" style="width: 400px; margin-top: -20px;">
+    </div>
+  </div>
+  
   
   
 
@@ -91,24 +116,68 @@ Mentor: Mr.Kanhayya Khandagale</pre>
   
   <p class="categories-title">Categories</p>
 
-  <a href="https://www.google.com" target="_blank">
-    <img src=  "image/historical.jpg" style="margin:10px 25px 10px 250px  ; border-radius: 20px;" class="category-image" alt="Science Fiction">
-  </a>
-  <a href="https://www.google.com" target="_blank">
-    <img src="image/science fiction.jpg" style="margin:10px 20px 10px 10px  ; border-radius: 20px;" class="category-image" alt="Historical">
-  </a>
-  <a href="https://www.google.com" target="_blank">
-    <img src="image/mystery.jpg"style= "margin:10px  ; border-radius: 20px;"; class="category-image" alt="Mystery">
-  </a>
-  <a href="https://www.google.com" target="_blank">
-    <img src="image/drama.jpg" style="margin:10px 25px 10px 250px  ; border-radius: 20px;"class="category-image" alt="Drama">
-  </a>
-  <a href="https://www.google.com" target="_blank">
-    <img src="image/horror.jpg" style="margin:10px 20px 10px 10px  ; border-radius: 20px;"; class="category-image" alt="Horror">
-  </a>
-  <a href="https://www.google.com" target="_blank">
-    <img src="image/adventure.jpg" style="margin:10px ; border-radius: 20px;"; class="category-image" alt="Adventure">
-  </a>
+  <div style="text-align: center;">
+    <div style="display: inline-block; margin: 20px; text-align: center;">
+      <a href="https://www.google.com" target="_blank">
+        <img src="image/historical.jpg" class="category-image" style="border-radius: 20px;" alt="Historical">
+      </a><br>
+      <button style="margin-top: 10px;">Read More</button>
+    </div>
+  
+    <div style="display: inline-block; margin: 20px; text-align: center;">
+      <a href="https://www.google.com" target="_blank">
+        <img src="image/science fiction.jpg" class="category-image" style="border-radius: 20px;" alt="Science Fiction">
+      </a><br>
+      <button style="margin-top: 10px;">Read More</button>
+    </div>
+  
+    <div style="display: inline-block; margin: 20px; text-align: center;">
+      <a href="https://www.google.com" target="_blank">
+        <img src="image/mystery.jpg" class="category-image" style="border-radius: 20px;" alt="Mystery">
+      </a><br>
+      <button style="margin-top: 10px;">Read More</button>
+    </div>
+  
+    <div style="display: inline-block; margin: 20px; text-align: center;">
+      <a href="https://www.google.com" target="_blank">
+        <img src="image/drama.jpg" class="category-image" style="border-radius: 20px;" alt="Drama">
+      </a><br>
+      <button style="margin-top: 10px;">Read More</button>
+    </div>
+  
+    <div style="display: inline-block; margin: 20px; text-align: center;">
+      <a href="https://www.google.com" target="_blank">
+        <img src="image/horror.jpg" class="category-image" style="border-radius: 20px;" alt="Horror">
+      </a><br>
+      <button style="margin-top: 10px;">Read More</button>
+    </div>
+  
+    <div style="display: inline-block; margin: 20px; text-align: center;">
+      <a href="https://www.google.com" target="_blank">
+        <img src="image/adventure.jpg" class="category-image" style="border-radius: 20px;" alt="Adventure">
+      </a><br>
+      <button style="margin-top: 10px;">Read More</button>
+    </div>
+  </div>
+  <br><br><br><br><br><br><br><br>
+
+
+
+  <div style="display: flex; justify-content: space-between; align-items: center; margin: 40px;">
+    <div style="flex: 1; font-size: 30px; color: #333; padding-left: 50px;">
+      <p>
+        "Our aim is to make<br>
+        knowledge accessible to everyone."
+      </p>
+    </div>
+  
+    <div>
+      <img src="image/reading.jpg" alt="Reading" style="width: 300px; border-radius: 20px;">
+    </div>
+  </div>
+  
+  
 
 </body>
 </html>
+
