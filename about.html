@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Historical Fiction</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    header img {
+      display: block;
+      margin: 20px auto;
+      max-width: 150px;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-top: 0;
+      color: #333;
+    }
+
+    p.description {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .categories-title {
+      font-size: 1.5em;
+      margin: 30px 0 10px;
+      color: #222;
+    }
+
+    main {
+      padding: 0 20px;
+    }
+
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 50px;
+    }
+
+    .category {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      width: 180px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .category:hover {
+      transform: scale(1.05);
+    }
+
+    .category img {
+      width: 100%;
+      border-radius: 15px;
+      height: auto;
+    }
+
+    .cool-button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.9em;
+      margin-top: 10px;
+    }
+
+    .cool-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="image/logo.jpg" alt="Site Logo" />
+    <h1>Historical Fiction: Where Imagination Meets the Echoes of History</h1>
+    <p class="description">
+      Explore stories set in the past, where real events blend with fictional characters to bring history to life.
+    </p>
+  </header>
+
+  <main>
+    <H2 class="categories-title">HISTORICAL BOOKS</H2>
+    <section class="categories">
+      <!-- Category Template -->
+      <div class="category">
+        <a href="https://www.google.com" target="_blank" aria-label="India History book details">
+          <img src="image/ncert11.jpg" alt="India History Book Cover" />
+        </a>
+        <a href="books/lehs101.pdf" target="_blank">
+          <button class="cool-button">Read Book</button>
+        </a>
+        
+        <button onclick="window.location.href='details.html';" class="cool-button">About Book</button>
+      </div>
+
+      <div class="category">
+        <a href="https://www.google.com" target="_blank" aria-label="Science Fiction book details">
+          <img src="image/history3.jpg" alt="Science Fiction Book Cover" />
+        </a>
+        <button class="cool-button">Read Book</button>
+        
+        <button onclick="window.location.href='details.html';" class="cool-button">About Book</button>
+
+
+      </div>
+
+      <div class="category">
+        <a href="https://www.google.com" target="_blank" aria-label="Mystery book details">
+          <img src="image/history4.jpg" alt="Mystery Book Cover" />
+        </a>
+        <button class="cool-button">Read Book</button>
+        <button class="cool-button">About Book</button>
+      </div>
+
+      <div class="category">
+        <a href="https://www.google.com" target="_blank" aria-label="Drama book details">
+          <img src="image/history5.jpg" alt="Drama Book Cover" />
+        </a>
+        <button class="cool-button">Read Book</button>
+        <button class="cool-button">About Book</button>
+      </div>
+
+      <div class="category">
+        <a href="https://www.google.com" target="_blank" aria-label="Horror book details">
+          <img src="image/history6.jpg" alt="Horror Book Cover" />
+        </a>
+        <button class="cool-button">Read Book</button>
+        <button class="cool-button">About Book</button>
+      </div>
+
+      <div class="category">
+        <a href="https://www.google.com" target="_blank" aria-label="Adventure book details">
+          <img src="image/history8.jpg" alt="Adventure Book Cover" />
+        </a>
+        <button class="cool-button">Read Book</button>
+        <button class="cool-button">About Book</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
